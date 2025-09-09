@@ -28,6 +28,5 @@ Additional programs completed for course assignments, focusing on more advanced 
 ---
 
 **Course:** Compiler Design  
-**Institution:** [Your College/University Name]  
-**Student:** [Your Name]  
-**Academic Year:** [Year]
+**Student:** Natansh Shekhawat   
+**Roll no:** 22261A05A8
