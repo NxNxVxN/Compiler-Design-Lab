@@ -1,12 +1,3 @@
-/*
- * Program 9: Recursive Descent Parser with Lookahead
- * 
- * This program implements a top-down recursive descent parser with lookahead for parsing
- * expressions. Grammar: S -> (L) | a, L -> S L', L' -> , S L' | ε
- * The parser uses a lookahead character to make parsing decisions and validates expressions
- * containing parentheses, commas, and the terminal symbol 'a'.
- */
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -27,8 +18,7 @@ void Match(char ch) {
     else {
         printf("Error: expected '%c' at Position %d\n", ch, pos);
         exit(1);
-    }
-}
+    }}
 
 void S() {
     if (lookahead == '(') {
@@ -42,8 +32,7 @@ void S() {
     else {
         printf("Error: Unexpected symbol %c at position %d\n", lookahead, pos);
         exit(1);
-    }
-}
+    }}
 
 void L() {
     S();
@@ -71,4 +60,3 @@ int main() {
     }
     return 0;
 }
-
