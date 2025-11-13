@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
 char input[100];
 int pos = 0;
 char lookahead;
@@ -38,7 +37,6 @@ void L() {
     S();
     Lprime();
 }
-
 void Lprime() {
     if (lookahead == ',') {
         Match(',');
@@ -46,7 +44,6 @@ void Lprime() {
         Lprime();
     }
 }
-
 int main() {
     printf("Enter an expression: ");
     scanf("%s", input);
