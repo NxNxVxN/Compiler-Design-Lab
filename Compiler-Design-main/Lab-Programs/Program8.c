@@ -5,7 +5,8 @@
 
 char input[100];  
 int pos = 0;      
-char lookahead;   
+char lookahead;  
+
 void E();
 void Eprime();
 void T();
