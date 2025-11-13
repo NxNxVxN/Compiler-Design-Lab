@@ -1,12 +1,3 @@
-/*
- * Program 10: Computing FIRST Sets for a Grammar
- * 
- * This program computes and displays the FIRST sets for each non-terminal in a given grammar.
- * Grammar: E -> TC, C -> +TC | ε, T -> FD, D -> *FD | ε, F -> (E) | id
- * The FIRST set of a non-terminal contains all terminal symbols that can begin strings
- * derived from that non-terminal.
- */
-
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -18,12 +9,9 @@ void computeFirst(char production[][10], int numProductions, char nonTerminal) {
     int i, j;
     
     for (i = 0; i < numProductions; i++) {
-        if (production[i][0] == nonTerminal) {
-            
+        if (production[i][0] == nonTerminal) {        
             char firstSymbol = production[i][3]; 
-            
             if (islower(firstSymbol) || firstSymbol == '(' || firstSymbol == '@' || firstSymbol == '+' || firstSymbol == '*') {
-                
                 char term[2] = {firstSymbol, '\0'};
                 if (strchr(firstSet, firstSymbol) == NULL) {
                     strcat(firstSet, term);
