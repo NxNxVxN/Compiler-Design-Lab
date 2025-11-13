@@ -41,6 +41,5 @@ int main()
         printf("String %s belongs to the given Grammar.\n",input);
     else
         printf("String %s does not belong to the given Grammar.\n",input);
-    
     return 0;
 }
